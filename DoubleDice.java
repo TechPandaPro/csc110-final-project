@@ -86,8 +86,8 @@ public class DoubleDice {
         betRaw = betRaw.substring(1);
       }
 
+      // attempt to parse the input
       try {
-        // attempt to parse the input
         double doubleParsed = Double.parseDouble(betRaw);
 
         // if the input has 2 or less decimal places, parse the input--otherwise, mark it as invalid
@@ -105,9 +105,8 @@ public class DoubleDice {
       }
 
       /*
-        if the input isn't already invalid and it's less than 0, 
-        greater than the player's money, or has more than 2 decimal 
-        places, then mark it as invalid input
+        if the input isn't already invalid and it's less than 0 or 
+        more than the player's money, then mark it as invalid input
       */
       if (
         valid && (
