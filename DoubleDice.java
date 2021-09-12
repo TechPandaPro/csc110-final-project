@@ -132,7 +132,7 @@ public class DoubleDice {
   }
 
   /**
-   * Outputs the specified double as a 
+   * Outputs the specified cents as a 
    * formatted dollar amount.
    *
    * @param amount the amount to output
